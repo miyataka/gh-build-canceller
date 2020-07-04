@@ -11,7 +11,7 @@ jobs:
     steps:
     - uses: actions/checkout@v2
     - name: shot
-      uses: yellowmegaman/gh-build-canceller@v1.6
+      uses: .
       with:
         github_token: ${{ secrets.GITHUB_TOKEN }}
         workflows_filter: "CI|pr|build_canceller"
