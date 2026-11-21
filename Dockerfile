@@ -5,7 +5,7 @@ LABEL \
   "homepage"="https://github.com/marketplace/actions/gh-actions-stale-run-canceller" \
   "repository"="https://github.com/yellowmegaman/gh-build-canceller"
 
-RUN apk add --no-cache git curl jq bash
+RUN apk add --no-cache git curl jq bash 'libcrypto3>=3.5.9-r1' 'libssl3>=3.5.9-r1'
 
 ADD *.sh /
 
